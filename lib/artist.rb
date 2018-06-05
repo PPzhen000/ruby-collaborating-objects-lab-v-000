@@ -21,9 +21,10 @@ class Artist
     @@all << self
   end
 
-  def all
+  def self.all
     @@all
   end
+
   def self.create_by_name(artist_name)
       artist = self.new
       artist.name = artist_name
