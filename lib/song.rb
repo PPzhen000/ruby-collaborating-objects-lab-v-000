@@ -19,7 +19,7 @@ class Song
     #@name = filename[1]
   end
 
-  def name
+  def self.name
     @name
   end
 
