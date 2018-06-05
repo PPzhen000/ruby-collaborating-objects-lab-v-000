@@ -22,7 +22,7 @@ class Artist
   end
 
   def all
-    @@all?
+    @@all
   end
 
   def self.create_by_name(artist_name)
