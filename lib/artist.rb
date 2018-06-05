@@ -33,9 +33,10 @@ class Artist
 
     def self.find_by_name(artist_name)
       #@@all. {|artist| artist.name == artist_name}
+      result = nil
       @@all.each do |artist|
         if @@all.include? artist_name
-          self.artist
+          result = artist
           break
         end
       end
