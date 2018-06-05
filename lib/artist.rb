@@ -19,7 +19,7 @@ class Artist
     @songs
   end
 
-  def save #adds the artist instance to the @@all class variable
+  def self.save #adds the artist instance to the @@all class variable
     @@all << self if !@@all.include?(self)
   end
 
@@ -30,7 +30,7 @@ class Artist
   def self.create_by_name(artist_name)
       artist = self.new(artist_name)
       artist.name = artist_name
-      self.save 
+      self.save
       artist
     end
 
