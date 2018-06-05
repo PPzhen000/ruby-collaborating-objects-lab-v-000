@@ -13,6 +13,7 @@ class MP3Importer
     Dir.glob("#{path}/*.mp3").collect do |f|
       @files << f.gsub("#{path}/","")
     end
+    @files.uniq 
   end
 
   def import
