@@ -33,7 +33,8 @@ class Artist
     end
 
     def self.find_by_name(artist_name)
-       Artist.all.select {|artist| artist.name == artist_name}
+       array = Artist.all.select {|artist| artist.name == artist_name}
+       array.split(" ")
 
       # binding.pry
       #  @@all.each do |artist|
