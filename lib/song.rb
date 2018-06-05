@@ -16,7 +16,7 @@ class Song
     filename = filename.chomp(".mp3").split(" - ") #["Real Estate", "Green Aisles", "country"]
     song = Song.new(filename[1])
     song.artist = filename[0]
-    # song.artist_name=(filename[0])
+    song.artist_name=(filename[0])
     song.name = filename[1]
     # @name = filename[1]
     #binding.pry
