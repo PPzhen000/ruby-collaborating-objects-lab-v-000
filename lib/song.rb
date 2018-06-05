@@ -18,4 +18,9 @@ class Song
     song.artist = filename[0]
     @name = filename[1]
   end
+
+  def name
+    @name
+  end
+
 end
