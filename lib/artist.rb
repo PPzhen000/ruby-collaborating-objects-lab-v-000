@@ -36,8 +36,8 @@ class Artist
       # Artist.all.detect {|artist| artist.name == artist_name}
       if Artist.all.name == artist_name
         Artist.all
-      else 
-        nil 
+      else
+        nil
       end 
       # binding.pry
       #  @@all.each do |artist|
