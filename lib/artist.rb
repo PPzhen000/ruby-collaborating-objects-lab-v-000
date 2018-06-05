@@ -1,26 +1,26 @@
 class Artist
 
-  attr_accessor :name 
+  attr_accessor :name
 
   def initialize(artist_name)
     @name = artist_name
-  end 
+  end
 
-  def songs 
+  def songs
 
-  end 
+  end
 
   def save
 
-  end 
+  end
 
   def self.find_or_create_by_name
 
-  end 
+  end
 
   def print_songs
 
   end 
-  
 
-end 
+
+end
