@@ -1,3 +1,4 @@
+require 'pry' 
 class Artist
 
   attr_accessor :name, :song, :artist_name
@@ -33,6 +34,7 @@ class Artist
 
     def self.find_by_name(artist_name)
       Artist.all.detect {|artist| artist.name == artist_name}
+      binding.pry 
       # @@all.each do |artist|
       #   if @@all.include? artist_name
       #     artist.
