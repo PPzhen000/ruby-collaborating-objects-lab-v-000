@@ -33,14 +33,19 @@ class Artist
     end
 
     def self.find_by_name(artist_name)
-      Artist.all.detect {|artist| artist.name == artist_name}
+      # Artist.all.detect {|artist| artist.name == artist_name}
+      if Artist.all.name == artist_name
+        Artist.all
+      else 
+        nil 
+      end 
       # binding.pry
-      # @@all.each do |artist|
-      #   if @@all.include? artist_name
-      #     artist.
-      #     break
-      #   end
-      # end
+      #  @@all.each do |artist|
+      #    if @@all.include? artist_name
+      #      artist.
+      #      break
+      #    end
+      #  end
     end
 
     def self.find_or_create_by_name(artist_name)
