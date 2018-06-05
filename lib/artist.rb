@@ -32,14 +32,13 @@ class Artist
     end
 
     def self.find_by_name(artist_name)
-      #@@all. {|artist| artist.name == artist_name}
-      result = nil
-      @@all.each do |artist|
-        if @@all.include? artist_name
-          result = artist
-          break
-        end
-      end
+      @@all.detect {|artist| artist.name == artist_name}
+      # @@all.each do |artist|
+      #   if @@all.include? artist_name
+      #     artist.
+      #     break
+      #   end
+      # end
     end
 
     def self.find_or_create_by_name(artist_name)
