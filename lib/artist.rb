@@ -7,6 +7,7 @@ class Artist
   def initialize(artist_name)
     @name = artist_name
     @songs = []
+    @all = @@all
   end
 
   def add_song(song)
@@ -17,13 +18,8 @@ class Artist
     @songs
   end
 
-  #def save #adds the artist instance to the @@all class variable
-  #  @@all << self
-  #end
-  class << self
-    def save
-      @@all << self
-    end
+  def save #adds the artist instance to the @@all class variable
+    @all << self
   end
 
   def self.create_by_name(artist_name)
