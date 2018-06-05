@@ -17,7 +17,8 @@ class Song
     song = Song.new(filename[0])
     song.artist = filename[1]
     song.artist_name=(filename[0])
-    #binding.pry
+
+    binding.pry
     song
   end
 
