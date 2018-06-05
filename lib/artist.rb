@@ -2,7 +2,7 @@ class Artist
 
   attr_accessor :name, :song
 
-  @@all = [] 
+  @@all = [] #keeps track of all artist instances
 
   def initialize(artist_name)
     @name = artist_name
@@ -24,7 +24,7 @@ class Artist
   def self.create_by_name(artist_name)
       artist = self.new
       artist.name = artist_name
-      self.all << artist 
+      self.all << artist
       song
     end
 
