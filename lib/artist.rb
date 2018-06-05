@@ -24,7 +24,7 @@ class Artist
   end
 
   def self.all
-    @@all
+    @@all.uniq 
   end
 
   def self.create_by_name(artist_name)
