@@ -35,7 +35,7 @@ class Artist
       #@@all. {|artist| artist.name == artist_name}
       @@all.each do |artist|
         if @@all.include? artist_name
-          artist
+          self.artist
           break
         end
       end
