@@ -9,15 +9,15 @@ class Artist
     @songs = []
   end
 
-  def add_song(song)
+  # def add_song(song)
+  #   self.songs << song
+  # end
+
+  def songs(song) #keeps track of artist's songs
     self.songs << song
   end
 
-  def songs
-    song = Song.new
-  end
-
-  def save
+  def save #adds the artist instance to the @@all class variable
     @@all << self
   end
 
@@ -40,7 +40,7 @@ class Artist
   end
 
   def print_songs
-    self.songs.each {|song| song.name} 
+    self.songs.each {|song| song.name}
   end
 
 
