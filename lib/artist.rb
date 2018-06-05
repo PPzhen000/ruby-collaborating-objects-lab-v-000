@@ -36,7 +36,7 @@ class Artist
         Artist.all.select {|artist| artist.name == artist_name}
         
 
-       self.all.detect { |artist| artist.name == name }
+       #self.all.detect { |artist| artist.name == name }
       # binding.pry
       #  @@all.each do |artist|
       #    if @@all.include? artist_name
