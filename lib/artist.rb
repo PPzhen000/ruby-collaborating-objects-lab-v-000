@@ -17,13 +17,15 @@ class Artist
     @songs
   end
 
-  def save #adds the artist instance to the @@all class variable
-    all << self
+  #def save #adds the artist instance to the @@all class variable
+  #  @@all << self
+  #end
+  class << self
+    def save
+      @@all << self
+    end
   end
 
-  def all
-    @@all
-  end
   def self.create_by_name(artist_name)
       artist = self.new
       artist.name = artist_name
