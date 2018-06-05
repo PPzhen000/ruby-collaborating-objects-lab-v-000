@@ -28,7 +28,6 @@ class Artist
   def self.create_by_name(artist_name)
       artist = self.new(artist_name)
       self.all << artist
-      song
     end
 
     def self.find_by_name(artist_name)
