@@ -13,8 +13,8 @@ class Artist
   #   self.songs << song
   # end
 
-  def songs(song) #keeps track of artist's songs
-    self.songs << song
+  def songs(song) #keeps track of an artist's songs
+    @songs << song
   end
 
   def save #adds the artist instance to the @@all class variable
