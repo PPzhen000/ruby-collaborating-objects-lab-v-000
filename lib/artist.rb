@@ -14,7 +14,7 @@ class Artist
   end
 
   def songs #keeps track of an artist's songs
-    @songs 
+    @songs
   end
 
   def save #adds the artist instance to the @@all class variable
