@@ -20,17 +20,17 @@ class Artist
   end
 
   def save #adds the artist instance to the @@all class variable
-    @@all << self if !@@all.include?(self) 
+    @@all << self if !@@all.include?(self)
   end
 
   def self.all
-    @@all.uniq 
+    @@all
   end
 
   def self.create_by_name(artist_name)
       artist = self.new(artist_name)
       artist.name = artist_name
-      @@all << self
+      save 
       artist
     end
 
