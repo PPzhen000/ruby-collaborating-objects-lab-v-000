@@ -9,12 +9,12 @@ class Artist
     @songs = []
   end
 
-  # def add_song(song)
-  #   self.songs << song
-  # end
+  def add_song(song)
+    @songs << song
+  end
 
   def songs(song) #keeps track of an artist's songs
-    @songs << song
+    @songs 
   end
 
   def save #adds the artist instance to the @@all class variable
