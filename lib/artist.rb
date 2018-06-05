@@ -1,6 +1,6 @@
 class Artist
 
-  attr_accessor :name, :song
+  attr_accessor :name, :song, artist_name
 
   @@all = [] #keeps track of all artist instances
 
