@@ -1,6 +1,7 @@
 require 'pry'
 class Song
 
+  attr_accessor :name, :artist 
   def initialize(name)
     @name = name
   end
@@ -13,5 +14,5 @@ class Song
     song = Song.new
     song.title = filename.split(" ")[1]
     song
-  end 
+  end
 end
