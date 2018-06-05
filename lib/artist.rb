@@ -34,6 +34,7 @@ class Artist
 
     def self.find_by_name(artist_name)
         Artist.all.select {|artist| artist.name == artist_name}
+
         binding.pry
 
        #self.all.detect { |artist| artist.name == name }
