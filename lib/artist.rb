@@ -13,7 +13,7 @@ class Artist
     @songs << song
   end
 
-  def songs(song) #keeps track of an artist's songs
+  def songs #keeps track of an artist's songs
     @songs 
   end
 
