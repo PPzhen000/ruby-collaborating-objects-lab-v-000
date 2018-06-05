@@ -20,7 +20,7 @@ class Artist
   end
 
   def save #adds the artist instance to the @@all class variable
-    @@all << self
+    @@all << self if !@@all.include?(self) 
   end
 
   def self.all
