@@ -17,7 +17,7 @@ class Artist
     @songs
   end
 
-  def save #adds the artist instance to the @@all class variable
+  def self.save #adds the artist instance to the @@all class variable
     @@all << self
   end
 
