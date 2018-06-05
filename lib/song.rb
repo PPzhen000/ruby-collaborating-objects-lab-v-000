@@ -19,7 +19,7 @@ class Song
     song.artist_name=(filename[1])
   end
 
-  def self.name
+  def name
     @name
   end
 
