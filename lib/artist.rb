@@ -35,7 +35,7 @@ class Artist
     def self.find_by_name(artist_name)
        Artist.all.select {|artist| artist.name == artist_name}
 
-      # binding.pry
+      binding.pry
       #  @@all.each do |artist|
       #    if @@all.include? artist_name
       #      artist.
